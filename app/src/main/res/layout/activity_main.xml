@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="237dp"
+        android:layout_height="173dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="102dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/upload_img"
+        android:onClick="uploadImage"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.466"
+        app:srcCompat="@android:drawable/ic_menu_upload" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="106dp"
+        android:layout_height="83dp"
+        android:contentDescription="@string/save_img"
+        android:onClick="saveImage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.56"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="103dp"
+        android:layout_height="84dp"
+        android:contentDescription="@string/send_img"
+        android:onClick="shareImage"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.85"
+        app:srcCompat="@android:drawable/ic_menu_share" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="133dp"
+        android:layout_height="35dp"
+        android:text="@string/upload_img"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="139dp"
+        android:layout_height="33dp"
+        android:text="@string/send_img"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.702" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="136dp"
+        android:layout_height="34dp"
+        android:text="@string/save_img"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.555" />
+</androidx.constraintlayout.widget.ConstraintLayout>
